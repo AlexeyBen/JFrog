@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "esnext",
+    "lib": ["esnext", "dom", "es2021"],
+    "jsx": "react",
+    "types": [
+      "cypress",
+      "node"
+    ],
+    "typeRoots": [
+      "./node_modules/@types/"
+    ],
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "noUnusedLocals": false,
+    "baseUrl": ".",
+    "paths": {
+      "@models/*": ["./cypress/models/*"],
+      "@support/*": ["./cypress/support/*"]
+    }
+  },
+  "include": [
+    "**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
