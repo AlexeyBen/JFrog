@@ -1,17 +1,17 @@
 export class MainPage {
     addRowBtn() {
-        return cy.get("*[data-cy='button']")
+        return cy.get("*[data-cy='button']");
     };
 
     rowsList() {
-        return cy.get('*[data-cy=\'list\'] >li')
+        return cy.get('*[data-cy=\'list\'] >li');
     };
 
     input() {
-        return cy.get('#outlined-basic')
+        return cy.get('#outlined-basic');
     };
 
-    addRow(){
+    addRow() {
         this.addRowBtn().click();
     }
 }
